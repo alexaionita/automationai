@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandra Ioniță - AI Automations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,300;6..96,400;6..96,500;6..96,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <h1 class="scroll-appear hero-title">Alexandra Ioniță</h1>
+    <p class="scroll-appear hero-subtitle">- AI Automations -</p>
+    <p class="scroll-appear hero-tagline">Automate your brand without looking like a robot.</p>
+  </section>
+
+  <section class="quick-nav">
+    <div class="quick-grid">
+      <a href="#strategySection" class="quick-card">
+        <i class="fa-solid fa-robot"></i>
+        <span>THE PLAN</span>
+      </a>
+      <a href="#howItLooksSection" class="quick-card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <span>HOW IT LOOKS</span>
+      </a>
+      <a href="#pricingSection" class="quick-card">
+        <i class="fa-solid fa-tag"></i>
+        <span>PRICING</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="strategy" id="strategySection">
+    <h2 class="scroll-appear section-title">AUTOMATION STRATEGY</h2>
+    <div id="strategyStage">
+      <div id="strategyChat"></div>
+      <p class="tap-hint">Click the card to see the steps</p>
+    </div>
+  </section>
+
+  <section class="how-it-looks" id="howItLooksSection">
+    <div class="scroll-appear flow-description">
+      AI creates your content, posts it for you, and follows up with your clients.
+    </div>
+
+    <div class="visual-demo-container">
+      <div class="demo-box scroll-appear">
+        <div class="ig-mockup" id="igMockup">
+          <div class="ig-header">
+            <div class="ig-avatar"></div>
+            <span class="ig-username">yourbrand.ai</span>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="ig-image">AI GENERATED VISUAL</div>
+          <div class="ig-actions">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-comment"></i>
+            <i class="fa-regular fa-paper-plane"></i>
+          </div>
+          <div class="ig-caption">
+            <strong>yourbrand.ai</strong> <span id="typeCaption"></span><span class="cursor">|</span>
+          </div>
+        </div>
+        <div class="demo-label">
+          <strong>Connect your brand & preferences</strong>
+          <p>AI generates your weekly content</p>
+        </div>
+      </div>
+
+      <div class="demo-box scroll-appear">
+        <div class="calendar-mockup" id="calendarSection">
+          <div class="cal-header"><i class="fa-solid fa-calendar-week"></i> <span>AUTOMATED CALENDAR</span></div>
+          <div class="cal-grid" id="calGrid"></div>
+        </div>
+        <div class="demo-label">
+          <strong>Posts are published automatically</strong>
+        </div>
+      </div>
+
+      <div class="demo-box scroll-appear">
+        <div class="iphone-notification" id="reminderSectionIndex">
+          <div class="notif-header">
+            <div class="notif-app-icon"><i class="fa-solid fa-bell"></i></div>
+            <span class="notif-app-name">REMINDER</span>
+          </div>
+          <div class="notif-body">
+            <strong>Client Follow-up</strong>
+            <p>Mary hasn't booked in 30 days. Sending automatic message... ✉️</p>
+          </div>
+          <div class="notif-status"><i class="fa-solid fa-check-circle"></i> Successfully sent</div>
+        </div>
+        <div class="demo-label">
+          <strong>Clients get follow-ups & reminders</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="growth" id="growthSection">
+    <h2 class="scroll-appear section-title">SCALABILITY & IMPACT</h2>
+    <div class="growth-grid">
+      <div class="metric-card scroll-appear">
+        <div class="metric-number" data-target="120">0</div><span class="metric-unit">%</span>
+        <p class="metric-label">Posting Consistency</p>
+        <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+      </div>
+      <div class="metric-card scroll-appear">
+        <div class="metric-number" data-target="3">0</div><span class="metric-unit">x</span>
+        <p class="metric-label">More Bookings</p>
+        <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+      </div>
+      <div class="metric-card scroll-appear">
+        <div class="metric-number" data-target="25">0</div><span class="metric-unit">%</span>
+        <p class="metric-label">Revenue Growth</p>
+        <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+      </div>
+    </div>
+
+    <div class="graph-container scroll-appear">
+      <svg viewBox="0 0 500 150" class="growth-graph">
+        <path id="graphLine" d="M0,140 L50,135 L100,140 L150,110 L200,115 L250,85 L300,95 L350,55 L400,65 L450,25 L500,35" fill="none" stroke-width="3" />
+      </svg>
+      <div class="graph-label">YOUR BRAND TRAJECTORY WITH AI</div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricingSection">
+    <h2 class="scroll-appear section-title">CHOOSE YOUR PLAN</h2>
+    <div class="pricing-grid">
+      <div class="price-card scroll-appear">
+        <h3>STARTER</h3>
+        <div class="price">€149 <span>/ month</span></div>
+        <p class="price-desc">Perfect for consistency</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Scheduled posts</li>
+          <li><i class="fa-solid fa-check"></i> AI generated captions</li>
+          <li><i class="fa-solid fa-check"></i> Automated content system</li>
+        </ul>
+        <div class="price-saving">Save 8h / week</div>
+        <a href="https://wa.me/40741804562?text=Hi%20Alexandra!%20I'm%20interested%20in%20the%20STARTER%20plan." class="cta-button plan-btn">GET STARTED</a>
+      </div>
+
+      <div class="price-card scroll-appear featured">
+        <div class="popular-tag">MOST POPULAR</div>
+        <h3>GROWTH</h3>
+        <div class="price">€199 <span>/ month</span></div>
+        <p class="price-desc">Automate your engagement</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Everything in Starter</li>
+          <li><i class="fa-solid fa-check"></i> Automated comments</li>
+          <li><i class="fa-solid fa-check"></i> Constant interaction</li>
+        </ul>
+        <div class="price-saving">+40% more engagement</div>
+        <a href="https://wa.me/40741804562?text=Hi%20Alexandra!%20I'm%20interested%20in%20the%20GROWTH%20plan." class="cta-button plan-btn gold">GET STARTED</a>
+      </div>
+
+      <div class="price-card scroll-appear">
+        <h3>PRO</h3>
+        <div class="price">€279 <span>/ month</span></div>
+        <p class="price-desc">Full automation</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Everything in Growth</li>
+          <li><i class="fa-solid fa-check"></i> Automated DMs</li>
+          <li><i class="fa-solid fa-check"></i> Effortless conversions</li>
+        </ul>
+        <div class="price-saving">2-3x more clients</div>
+        <a href="https://wa.me/40741804562?text=Hi%20Alexandra!%20I'm%20interested%20in%20the%20PRO%20plan." class="cta-button plan-btn">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 100px 20px; text-align: center;">
+    <p class="scroll-appear" style="color: var(--muted); font-size: 12px; letter-spacing: 2px; margin-bottom: 25px; text-transform: uppercase;">Want to see it in action?</p>
+    <a href="demo.html" class="cta-button scroll-appear" style="background: #FFF; color: #000; padding: 22px 55px; border: none;">SEE HOW IT WOULD LOOK</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
